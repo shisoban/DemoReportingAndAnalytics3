@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+
+	
+
+	<package name="abc" extends="tiles-default" >
+		<!--  <action name="loginAction" class="com.demoReportingAndAnalytics.LoginAction"> -->
+		<action name="loginAction" class="com.demoReportingAndAnalytics.LoginAction">
+		<result name="success" type="tiles">login-success</result>
+		<result name="error" type="tiles">login-error</result>
+		</action>
+	</package>
+<!-- 
+	<constant name="struts.convention.action.suffix" value="Controller"/>
+    <constant name="struts.convention.action.mapAllMatches" value="true"/>
+    <constant name="struts.convention.default.parent.package" value="rest-default"/>
+    <constant name="struts.convention.package.locators" value="controller"/>
+
+ -->
+	
+	
+</struts>    
